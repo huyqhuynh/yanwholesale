@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wholesale Inquiry - Yan Wholesale Inc.</title>
+<link rel="icon" href="images/yan-logo.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="container container-6xl nav-inner">
+    <a href="index.html" class="logo"><img src="images/yan-logo.png" alt="Yan Wholesale Inc."></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html" class="inquire active">Inquire</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+  </div>
+  <div class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="contact.html" class="active">Inquire</a>
+  </div>
+</nav>
+
+<section class="hero" style="padding: 4rem 0;">
+  <div class="container container-4xl">
+    <h1 class="text-hero" style="font-size:2.75rem;">Wholesale Inquiry</h1>
+    <p class="lead" style="font-size:1.2rem;">Submit your wholesale inquiry and our team will contact you within 24 hours to discuss your banh mi production needs.</p>
+  </div>
+</section>
+
+<section class="section section-card">
+  <div class="container container-6xl contact-grid">
+
+    <!-- Contact Info -->
+    <div>
+      <h2 class="section-title" style="font-size:1.75rem; margin-bottom:1.5rem;">Contact Information</h2>
+
+      <div class="contact-item">
+        <span class="icon">📍</span>
+        <div>
+          <h3>Address</h3>
+          <p>3120 20th Ave<br>Sacramento, CA 95820<br>United States</p>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <span class="icon">📞</span>
+        <div>
+          <h3>Phone</h3>
+          <p><a href="tel:+19167390885">(916) 739-0885</a></p>
+          <p style="font-size:0.85rem;">Nhan: <a href="tel:+19162902522">916-290-2522</a></p>
+        </div>
+      </div>
+
+      <div class="hours-box">
+        <h3>Business Hours</h3>
+        <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
+        <p>Saturday: 9:00 AM - 2:00 PM</p>
+        <p>Sunday: Closed</p>
+      </div>
+    </div>
+
+    <!-- Form -->
+    <div>
+      <!--
+        This form uses FormSubmit.co so it works with NO backend/server (works on GitHub Pages or GoDaddy).
+        Replace "YOUR-EMAIL@example.com" below with the email you want inquiries sent to.
+        The first submission will send a confirmation link to that inbox -- click it once to activate.
+      -->
+      <form class="inquiry" action="https://formsubmit.co/admin@yanwholesale.com" method="POST">
+        <input type="hidden" name="_subject" value="New Wholesale Inquiry - Yan Wholesale">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="thank-you.html">
+
+        <div>
+          <h3 style="font-family:'Inter',sans-serif; font-size:1.15rem; margin-bottom:1rem;">Business Information</h3>
+          <div class="form-group">
+            <label for="businessName">Business Name *</label>
+            <input type="text" id="businessName" name="Business Name" placeholder="Your business name" required>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contactName">Contact Name *</label>
+              <input type="text" id="contactName" name="Contact Name" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="Email" placeholder="your@email.com" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="Phone" placeholder="(916) 739-0885 or 916-290-2522" required>
+          </div>
+        </div>
+
+        <div>
+          <h3 style="font-family:'Inter',sans-serif; font-size:1.15rem; margin-bottom:1rem;">Product Interests *</h3>
+          <div class="checkbox-list">
+            <label><input type="checkbox" name="Product Interests[]" value="Ham (Block & Sliced)"> Ham (Block &amp; Sliced)</label>
+            <label><input type="checkbox" name="Product Interests[]" value="Gio Thu (Block & Sliced)"> Giò Thủ (Block &amp; Sliced)</label>
+            <label><input type="checkbox" name="Product Interests[]" value="Pate (Block)"> Pâté (Block)</label>
+            <label><input type="checkbox" name="Product Interests[]" value="Cha Song"> Chả Sống</label>
+            <label><input type="checkbox" name="Product Interests[]" value="Cha Lua"> Chả Lụa</label>
+            <label><input type="checkbox" name="Product Interests[]" value="Cha Lua La (Large & Small)"> Chả Lụa Lá (Large &amp; Small)</label>
+            <label><input type="checkbox" name="Product Interests[]" value="Cha Chien (Not Fried)"> Chả Chiên (Not Fried)</label>
+            <label><input type="checkbox" name="Product Interests[]" value="Cha Chien L (Not Fried)"> Chả Chiên L (Not Fried)</label>
+            <label><input type="checkbox" name="Product Interests[]" value="Cha Hue"> Chả Huế</label>
+            <label><input type="checkbox" name="Product Interests[]" value="Cha Bi"> Chả Bì</label>
+          </div>
+        </div>
+
+        <div>
+          <h3 style="font-family:'Inter',sans-serif; font-size:1.15rem; margin-bottom:1rem;">Expected Order Volume *</h3>
+          <div class="radio-list">
+            <label><input type="radio" name="Order Volume" value="100-500 units/month" required> 100-500 units/month</label>
+            <label><input type="radio" name="Order Volume" value="500-1,000 units/month"> 500-1,000 units/month</label>
+            <label><input type="radio" name="Order Volume" value="1,000-5,000 units/month"> 1,000-5,000 units/month</label>
+            <label><input type="radio" name="Order Volume" value="5,000+ units/month"> 5,000+ units/month</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="additionalInfo">Additional Information</label>
+          <textarea id="additionalInfo" name="Additional Information" placeholder="Tell us more about your business and specific needs..."></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Submit Inquiry</button>
+          <a href="index.html" class="btn btn-outline">Cancel</a>
+        </div>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h3>Yan Wholesale</h3>
+      <p>Premium wholesale banh mi production, proudly part of the Huong Lan Sandwiches family.</p>
+      <p style="opacity:0.6; font-size:0.8rem;">USDA-Inspected &bull; Authentic Quality &bull; Reliable Service</p>
+    </div>
+    <div>
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <div class="footer-contact-item">
+        <span>📍</span>
+        <div>3120 20th Ave<br>Sacramento, CA 95820</div>
+      </div>
+      <div class="footer-contact-item">
+        <span>📞</span>
+        <div>
+          <div><a href="tel:+19167390885" style="font-weight:600;">(916) 739-0885</a></div>
+          <div style="font-size:0.8rem; opacity:0.8; margin-top:0.25rem;">Nhan: <a href="tel:+19162902522">916-290-2522</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="footer-note">Yan Wholesale Inc. is part of the <strong>Huong Lan Sandwiches</strong> family, dedicated to bringing authentic Vietnamese banh mi excellence to wholesale partners nationwide.</div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Yan Wholesale Inc. All rights reserved.</p>
+      <div class="links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
